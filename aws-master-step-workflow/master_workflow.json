@@ -1,0 +1,37 @@
+{
+  "Comment": "Start Workflow",
+  "StartAt": "Audio URL or File?",
+  "States": {
+    "Audio URL or File?": {
+      "Type": "Choice",
+      "Choices": [
+        {
+          "Variable": "$.body.ScrapeorNot",
+          "StringEquals": "Yes",
+          "Next": "Scrape Audio"
+        },
+        {
+          "Variable": "$.body.ScrapeorNot",
+          "StringEquals": "No",
+          "Next": "Upload Audio"
+        }
+      ]
+    },
+
+    "Scrape Audio": {
+      "Type": "Task",
+      "Resource": "",
+      "Next": "Spawn Workflows"
+    },
+    "Upload Audio": {
+      "Type": "Task",
+      "Resource": "",
+      "Next": "Spawn Workflows"
+    },
+    "Spawn Workflows": {
+      "Type": "Task",
+      "Resource": "",
+      "End": true
+    }
+  }
+}

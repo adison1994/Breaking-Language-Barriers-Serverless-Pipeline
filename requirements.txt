@@ -1,0 +1,5 @@
+streamlit
+boto3
+botocore
+pysummarization
+nltk==3.4.5

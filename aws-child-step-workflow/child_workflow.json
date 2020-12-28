@@ -1,0 +1,111 @@
+{
+  "Comment": "Start Workflow",
+  "StartAt": "Speech-to-Text",
+  "States": {
+    "Speech-to-Text": {
+      "Type": "Task",
+      "Resource": "",
+      "Next": "Check Transcribe Status"
+    },
+    "Check Transcribe Status": {
+      "Type": "Task",
+      "Resource": "",
+      "Next": "Is Transcibe Completed?"
+    },
+    "Is Transcibe Completed?": {
+      "Type": "Choice",
+      "Choices": [
+        {
+          "Variable": "$.body.TranscibeStatus",
+          "StringEquals": "COMPLETED",
+          "Next": "Languauge Translation or Hide Entities"
+        },
+        {
+          "Variable": "$.body.TranscibeStatus",
+          "StringEquals": "IN_PROGRESS",
+          "Next": "Wait for Transcribe Completion"
+        }
+      ]
+    },
+    "Wait for Transcribe Completion": {
+      "Type": "Task",
+      "Resource": "",
+      "Next": "Check Transcribe Status"
+    },
+    "Languauge Translation or Hide Entities": {
+      "Type": "Choice",
+      "Choices": [
+        {
+          "Variable": "$.body.TranslationorNER",
+          "StringEquals": "Translation",
+          "Next": "Summarization?"
+        },
+        {
+          "Variable": "$.body.TranslationorNER",
+          "StringEquals": "NER",
+          "Next": "Named Entity Recognition"
+        }
+      ]
+    },
+    "Summarization?": {
+      "Type": "Choice",
+      "Choices": [
+        {
+          "Variable": "$.body.Summarize",
+          "StringEquals": "Summarize",
+          "Next": "Summarize Text"
+        },
+        {
+          "Variable": "$.body.Summarize",
+          "StringEquals": "No",
+          "Next": "Language Translation"
+        }
+      ]
+    },
+    "Summarize Text": {
+      "Type": "Task",
+      "Resource": "",
+      "Next": "Language Translation"
+    },
+    "Named Entity Recognition": {
+      "Type": "Task",
+      "Resource": "",
+      "Next": "Add SSML Tags"
+    },
+    "Add SSML Tags": {
+      "Type": "Task",
+      "Resource": "",
+      "Next": "Output as Audio?"
+    },
+    "Language Translation": {
+      "Type": "Task",
+      "Resource": "",
+      "Next": "Output as Audio?"
+    },
+    "Output as Audio?": {
+      "Type": "Choice",
+      "Choices": [
+        {
+          "Variable": "$.body.OutputAudio",
+          "StringEquals": "Yes",
+          "Next": "Text-to-Speech"
+        },
+        {
+          "Variable": "$.body.OutputAudio",
+          "StringEquals": "No",
+          "Next": "Store Meta Data"
+        }
+      ]
+    },
+    "Text-to-Speech": {
+      "Type": "Task",
+      "Resource": "",
+      "Next": "Store Meta Data"
+    },
+    "Store Meta Data": {
+      "Type": "Task",
+      "Resource": "",
+      "End": true
+    }
+  }
+}
