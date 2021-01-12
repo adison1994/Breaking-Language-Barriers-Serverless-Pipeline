@@ -2,10 +2,6 @@
 
 
 
-## Web Application
-
-http://3.85.147.6:8501/
-
 
 ## Codelabs
 
@@ -20,10 +16,9 @@ Natural Language Processing based Big Data Pipeline system to convert product in
 - NER Audio Masking 
 - Summarization
 
-
 ## Architecture
 
-![img](https://github.com/Nikhilkohli1/Breaking-Language-Barriers-Serverless-Pipeline/blob/main/application-screenshots/aws_architecture.png)
+![img](https://lh6.googleusercontent.com/VBfMTC3kYuEUvnUNagpADibEgBd0EemN8-QVroz6EyaQ30R7AuliHwz37_5-mWqyAj8Glo2ZiH6Pa5FkYtBBaWXY0yKSMPtn7unXrSvqKQbaVMW-KTpD08BzbkQNVlebiqc5AxFcFaY_Mosu8XubecTrFwiWtlx6CKPOZJCVpaGac79v)
 
 ## Step Function Workflow
 
@@ -39,10 +34,10 @@ The parent Step function spawns multiple Child Step functions to process multipl
 ![img](https://lh4.googleusercontent.com/zZ9i_XjrgJhY-MbBNTCgcy2cirerr0VS98u9jrdSP58Pm3JO33gAYxMLvKLb2CxD9Xv_u22sk9-rGKPl7I4IJ-Rng5hYezNR8dUXv7D3ZquLDb88ApN5P5BM7M_tB0BHhiGJNwnI4k4JotQOrziKRBoTwXnqAjHo2hjYxktchelLzoJO)
 
 ### Language Translation Step function Execution 
-![img](https://github.com/Nikhilkohli1/Breaking-Language-Barriers-Serverless-Pipeline/blob/main/application-screenshots/Translation%20sf.png)
+![img](https://lh5.googleusercontent.com/1zDx0cYpFi8ADi0TdWWMD8t-YRJX_kqF3KU6KT_YzHQJVVzPOovNP-6DfFd14YxyvVfWYyFOg8LH4pTzRyuBqRjWSO3FrZDqZBPiNQKsLXZc50JNxpX50zN6xFUSVrRXCXQ4imt909-i7hLkFpg4E4EM8i1W4PzMZY62E_xtux2bRb1l)
 
 ### NER Masking Step function Execution  
-![img](https://github.com/Nikhilkohli1/Breaking-Language-Barriers-Serverless-Pipeline/blob/main/application-screenshots/NER%20sf.PNG)
+![img](https://lh4.googleusercontent.com/qjAbqVjjW2AuBGVvY597U7sRzQWVekHuG0OtEkR0Fb8MVnyfsJt1FU26eTXtJQQZEeDuRdVlm3s6sURB8wYSBJnVIgLiLv5qqQ2KP_GQWulxgfVq2jI6VEY668Xythp6C-7hWHI_DnJFR3Y0CWx3BVCenq8edRDlHFQX_dyh7BnDUDTn)
 
 ## X-Ray Service Graph
 
@@ -54,27 +49,27 @@ We are using AWS X-Ray to debug and monitor our application. By enabling X-Ray f
 ## Application Screenshots 
 
 Login/Signup
-![img](https://github.com/Nikhilkohli1/Breaking-Language-Barriers-Serverless-Pipeline/blob/main/application-screenshots/Grid%20layout.PNG)
+![img](https://lh3.googleusercontent.com/_UJgDQ3ziSbB61hLtIhj5dBXsrYsLNNC2kJ0wLDYQnqG5w8t2wiOp-62UTFp28gG9wKSYvo08SBT7K1CFxWzHSSnsmy_IevzX3LkrfG_SPKwAxVTdvhllNHxwKNATf2euQOqGOXFYEVX0glox65CkyG8uujDUVJ4n3uEvw30BX8-RwVF)
 
 Services
 
-![img](https://github.com/Nikhilkohli1/Breaking-Language-Barriers-Serverless-Pipeline/blob/main/application-screenshots/services1.PNG)
-![img](https://github.com/Nikhilkohli1/Breaking-Language-Barriers-Serverless-Pipeline/blob/main/application-screenshots/Masking.PNG)
+![img](https://lh6.googleusercontent.com/O-sD4SLHimjwoVRvnK9EXMt7ubq8xFjH-b7ka9VH0cUbG39xLpYz0yzNSDY4R4JK2ShdA6Y0LWGNjH3bvf7UJ6DLEcyNMKKw1wVAmPFL_4VnLUuDiJuVUqlMPq0s_ChAdTPR4mxDzYXioy1LsXrhJUl8bzIrGeHBonaLayhNUAAoLsnu)
+![img](https://lh6.googleusercontent.com/oKHVepMKHbKwL5o6NOJAH1OAOU2CWtKcRnauxJUSO4WNkTbzPUfCkSGsqOSmgemE1mGPDxzs-0fi5OX5F8rNGfto4F_jeP_mP6cdvH2YHkXQUR1Dq1jsN80jCb1b3HGa04ukYZZV8hAh69gqO7ZgX8HKjm161C-cY3y8dUQ0Z-V0k0IF)
 
 
 NER Masking Output 
 
-![img](https://github.com/Nikhilkohli1/Breaking-Language-Barriers-Serverless-Pipeline/blob/main/application-screenshots/NER%20Output.PNG)
+![img](https://lh3.googleusercontent.com/1Fomzwz7HuyFXOs8zgZtBXxMwZ2Kc-v1T9VYZpCsFihilGkegXGqDGnMVFlXlOlIpnUvQm-zFWfnS-pQQ0eyN_I0y5GduQ5ObkuP2SoNkIb8TtwsVmT0JwhLvG6UOYPLfVSjvfp_PX-1lgLjmXKARUy64XOcEsUJX1E0B3u0Vkgt4A0T)
 
 Language Translation Output 
-![img](https://github.com/Nikhilkohli1/Breaking-Language-Barriers-Serverless-Pipeline/blob/main/application-screenshots/Translation%20Output.PNG)
+![img](https://lh6.googleusercontent.com/zo2KkiyJVaEx-atuVHBJ8crsbW7iY6RRKydxj4GC2FOQ4gYPD2Lc6VR5eCFeZ_2s1BumlbIOoxL3_5BSbJ6d4d2m4Lj1KoD06WDor7a_Ys-VY0NbZmZz5pxqkLeDgjjX9X9640v_blQP4vhrDkDkvQqCAJAOgKSE_l3QNBVb3g1LXq6k)
 
 
 ## Quick Sight Integration
 
 For our application we have integrated our meta database tables located in DynamoDB with AWS Quick Sight service to generate various analyses/dashboards to visualize different aspects of our application.
 
-![img](https://github.com/Nikhilkohli1/Breaking-Language-Barriers-Serverless-Pipeline/blob/main/application-screenshots/dash.PNG)
+![img](https://lh3.googleusercontent.com/OvAz9TQeo6HhAxvm5-3eMTuRmWKvchQv-654xs6Z2Bx93JA9isuXjU4OTXn7qmM5EIQJin21bmIaGK3gxw5sK6eJjkHACxz3BSoRak7OqH_awIAIIWLtLHBQeYhSUGi_syC8yiScO2tmBJ0KPP4xeZJpduFB2dPvn5f8NbZlAXPMyQOb)
 
 
 
