@@ -30,7 +30,7 @@ def invoke_child_step_function(podcast_file, Username, Langauges, User_selection
 	               }}, sort_keys=True)
 
 	response = sf_client.start_execution(
-		stateMachineArn='arn:aws:states:us-east-1:165885578631:stateMachine:BreakingBarriersMachine',
+		stateMachineArn='',
 		name=sf_name,
 		input= sf_input)
 
