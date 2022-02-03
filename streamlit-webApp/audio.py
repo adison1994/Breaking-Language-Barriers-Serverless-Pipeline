@@ -2,7 +2,7 @@ import boto3
 from botocore.config import Config
 
 polly_client = boto3.client('polly', config=Config(
-    region_name='us-east-1'))
+    region_name=''))
 
 def get_welcome_msg(uname):
 	text = "Welcome" + uname + ", You Have successfully Logged In. You can now start using Services offered by Breaking Language Barriers"
