@@ -8,7 +8,7 @@ from credentials import get_credentials
 user_pool_id, app_client_id, app_client_secret = get_credentials()
 
 client = boto3.client('cognito-idp')
-region = 'us-east-1'
+region = ''
 dynamodb_client = boto3.client('dynamodb', region_name = region)
 user_pl_id= user_pool_id
 app_cli_id= app_client_id
